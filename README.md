@@ -12,7 +12,7 @@ Aarogya Bharat is a comprehensive healthcare platform designed to bridge the gap
 ## Technologies Used
 - **Frontend**: HTML, CSS, JavaScript
 - **Backend**: PHP, Python
-- **Database**: MySQL or any other database as per implementation
+- **Database**: MySQL 
 
 ## Website Structure
 - **Home Page**: Introduction to the platform and quick access to major features.
