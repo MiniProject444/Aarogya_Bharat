@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('n_bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    color: #333; /* Color for text */
+}
+
+.logo {
+    position: absolute;
+    top: -15px;
+    right: 10px;
+    width: 200px;
+    height: auto;
+}
+
+.container {
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(203, 246, 255, 0.8);
+    border-radius: 5px;
+    border: 2px solid #0066ff;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #ff0000; /* Color for h1 tag */
+    font-family: 'Times New Roman', Times, serif, sans-serif; /* Font family */
+    font-weight: bold; /* Font weight */
+    text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.559); 
+}
+
+label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: calc(100% - 10px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+button {
+    display: block;
+    margin: 0 auto; /* Center align the button */
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #0040ff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+button:hover {
+    background-color: #009dff;
+}

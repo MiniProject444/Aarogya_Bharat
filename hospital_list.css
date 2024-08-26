@@ -1,0 +1,108 @@
+/* CSS for Hospital Information Table */
+body {
+    background-image: url('n_bg.png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-y: auto;
+}
+
+/* CSS for Logo Container */
+.logo-container {
+    position: absolute;
+    top: -20px;
+    right: 10px; /* Changed left to right */
+}
+
+/* CSS for Logo */
+.logo {
+    width: 200px;
+    height: 200px;
+}
+
+/* CSS for Hospital Information Table */
+table {
+    margin-top: 10px;
+    margin-bottom: 100px;
+    right: 190px;
+    transform: translateY(-50%);
+    border-collapse: collapse;
+    width: 55%;
+    border: 3px solid #0073ff;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    top: 122%; /* Adjust the top position to move the table down */
+}
+
+
+.header {
+    text-align: center; /* Align header text to center */
+    margin-top: 100px; /* Add margin at top */
+    margin-bottom: 20px; /* Add margin at bottom */
+    position: absolute;
+    top: -50px; /* Adjust as needed */
+    right: 500px; /* Adjust as needed */
+    font-size: 30px;
+}
+
+table {
+    margin: 0 auto; /* Center the table horizontally */
+
+/* CSS for Hospital Information Table */
+img {
+    width: 200px; /* Increased width of images */
+    height: 120px; /* Increased height of images */
+    display: block;
+    margin: 0 auto; /* Center images horizontally */
+}
+
+/* CSS for Hospital Information Table */
+.hospital-info {
+    text-align: center;
+}
+
+/* CSS for Hospital Information Table */
+h2 {
+    color: white; /* Changed text color */
+}
+
+/* CSS for Hospital Information Table */
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 2px solid #0073ff;
+    border-right: 2px solid #0073ff; /* Added right border */
+}
+
+/* CSS for Hospital Information Table */
+th {
+    background-color: #a7dfff;
+    border-top: 2px solid #333; /* Added top border */
+    border-left: 1px solid #ddd; /* Added left border */
+}
+
+/* CSS for Hospital Information Table */
+tr:last-child td { /* Style the last row separately */
+    border-bottom: none; /* Remove bottom border from the last row */
+}
+
+/* CSS for Hospital Information Table */
+@media screen and (max-width: 600px) {
+    table {
+        width: 100%;
+    }
+}
+
+    img {
+        max-width: 300px;
+        max-height: 120px;
+    }
+}
+
+/* CSS for Hospital Information Table */
+td {
+    vertical-align: middle;
+}
+
+
+/* Rest of your CSS styles */

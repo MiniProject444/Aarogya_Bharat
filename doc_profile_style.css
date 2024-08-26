@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('n_bg.png'); /* URL of your background image */
+    background-size: cover;
+    background-position: center;
+}
+
+.header {
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    z-index: 1;
+}
+
+.logo {
+    width: 200px; /* Adjust size as needed */
+    height: 200px; /* Maintain aspect ratio */
+}
+
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.profile-box {
+    background: linear-gradient(to bottom right, #0395a2, #2d5bb8);
+    border: 3px solid #0015ff;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    height: 400px; /* Increased height */
+    width: 600px; /* Increased width */
+    transition: all 0.3s ease; /* Added transition effect */
+}
+
+.profile-box:hover {
+    transform: scale(1.05); /* Scale up slightly on hover */
+    background: linear-gradient(to bottom right, #c5d8ff, #c3faff); /* Change background color */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Add box shadow */
+    border-color: #007bff; /* Change border color */
+    color: #ff0000; /* Change text color on hover */
+}
+
+.profile-picture {
+    margin-right: 20px;
+    position: relative;
+}
+
+.profile-picture img {
+    width: 250px; /* Change image width to rectangle */
+    height: 300px; /* Change image height to rectangle */
+    border-radius: 10px;
+    transition: all 0.3s ease; /* Added transition effect */
+}
+
+.doctor-name {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px 10px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease; /* Added transition effect */
+}
+
+.profile-picture:hover .doctor-name {
+    opacity: 1;
+}
+
+.profile-details {
+    max-width: 400px;
+}
+
+.profile-details h1 {
+    font-size: 24px;
+    margin-top: 0;
+    color: #000000; /* Color of the h1 before hover */
+    transition: color 0.3s ease; /* Added transition effect for color change */
+}
+
+.profile-details h1:hover {
+    color: #ff0000; /* Color of the h1 on hover */
+}
+
+.info-box {
+    margin-top: 10px;
+}
+
+.info-box p:first-child {
+    margin-top: 0; /* Remove top margin from the first paragraph */
+}
+
+.info-box p:last-child {
+    margin-bottom: 0; /* Remove bottom margin from the last paragraph */
+}
+
+.info-box p {
+    margin: 10px; /* Add space between each piece of information */
+    font-size: 20px; /* Increase font size */
+    color: #000000; /* Add color */
+    transition: all 0.3s ease; /* Added transition effect */
+}
+
+.profile-picture:hover img {
+    transform: scale(1.1); /* Zoom in effect on image */
+}
+
+.doctor-name {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.profile-picture:hover .doctor-name {
+    opacity: 1;
+}
+
+.profile-box .info-box p {
+    transition: color 0.3s ease; /* Added transition effect for text color change */
+}
+
+.profile-box .info-box p:hover {
+    color: #0051ff; /* Change text color when hovered over */
+}

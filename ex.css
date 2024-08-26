@@ -1,0 +1,120 @@
+/* CSS for the heading and paragraph */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+   }
+  
+  .banner {
+     width: 100%;
+     height: 100vh;
+     background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0,0,0,0.50)),url(bg.png);
+     background-size: cover;
+     background-position: center;
+     position: relative; /* Add position relative */
+  }
+  .logo {
+    width: 150px;
+    position: absolute; /* Position the logo absolutely */
+    top: 5px; /* Adjust the top position as needed */
+    right: 6px; /* Adjust the left position as needed */
+    cursor: pointer;
+ }
+ .navbar {
+    width: 85%;
+    margin: auto;
+    margin-left: 350px;
+    padding: 35px 0;
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+ }
+ 
+ 
+ .navbar ul li{
+     list-style: none;
+     display: inline-block;
+     margin: 0 20px;
+     margin-top: 35px;
+     position: relative;
+ }
+ 
+ .navbar ul li a{
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    color: #052913;
+ }
+ 
+ .navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #026404;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+ }
+ 
+ .navbar ul li:hover::after{
+    width: 100%;
+ }
+ 
+.content h1, .content p {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.content {
+    margin: 20px auto;
+    text-align: center;
+    color: #fff;
+}
+
+/* CSS for the buttons */
+.patient-button, .doctor-button {
+    background-color: #090491;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    margin-top: 150px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.patient-button:hover, .doctor-button:hover {
+    background-color: #054052;
+    box-shadow: 0 0 20px rgba(13, 155, 203, 0.551); /* Increasing the shadow on hover */
+}
+/* Media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+    .navbar {
+        margin-left: 0;
+        padding: 15px 0;
+    }
+    
+    .navbar ul li {
+        margin: 0 10px;
+        margin-top: 15px;
+    }
+    
+    .content h1 {
+        font-size: 60px;
+    }
+    
+    .content p {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .content h1 {
+        font-size: 40px;
+    }
+    
+    .content p {
+        font-size: 16px;
+    }
+}
